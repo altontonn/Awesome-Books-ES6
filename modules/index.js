@@ -51,8 +51,7 @@ const sections = [listSection, addSection, contactSection];
 
 const saveActiveNavItemLocally = (id) => {
   localStorage.setItem('activeNavItem', id);
-}
-
+};
 
 document.addEventListener('DOMContentLoaded', task.currentBooks);
 document.querySelector('#book-input').addEventListener('submit', (e) => {
@@ -84,7 +83,7 @@ const displaySection = (id) => {
       section.classList.add('d-none');
     }
   });
-}
+};
 
 const activateNavItem = (id) => {
   navItems.forEach((navItem) => {
@@ -94,7 +93,7 @@ const activateNavItem = (id) => {
       navItem.classList.remove('li-active');
     }
   });
-}
+};
 
 listBook.addEventListener('click', () => {
   displaySection(listSection.id);
