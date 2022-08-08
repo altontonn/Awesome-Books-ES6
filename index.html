@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="index.css">
+    <title> AWESOME BOOKS </title>
+  </head>
+  <body>
+    <div class="firstContainer">
+      <nav class="navigation">
+        <p>Awesome Books</p>
+        <ul>
+          <li><a href="#" id="listBooks" class="li-active">List</a></li>
+          <li><a href="#" id="newBooks">Add New</a></li>
+          <li><a href="#" id="contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="myClock">
+        <p id="myTime"></p>
+      </div>
+      
+      <section id="list-section">
+        <h1> All Awesome Books</h1>
+        <table class="table table-container">
+          <thead>
+            <tr>
+              <th> Title </th>
+              <th> Author </th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody id="list-book"></tbody>
+        </table>
+      </section>
+
+      <section id="add-section" class="d-none">
+        <h2> Add A New Book </h2>
+        <form id ="book-input">
+          <div class="book-group">
+            <label for="title">
+            <input type="text" id="title" class="book-content" placeholder="title">
+            </label>
+          </div><br>
+          <div class="book-group">
+            <label for="author">
+            <input type="text" id="author" class="book-content" placeholder="author">
+            </label>
+          </div><br>
+          <input type="submit" value="Add" class="btn-submit">
+        </form>
+      </section>
+
+      <section id="contact-section" class="d-none">
+        <h1>Contact Information</h1>
+        <p>Do you have any questions or you just want to say "hello"? You can reach out to us!</p>
+        <ul>
+          <li>Our e-mail: @gmail.com, @gmail.com</li>
+          <li>Our phone number: </li>
+          <li>Our address: Streetname City, Country</li>
+        </ul>
+      </section>
+
+      <footer class="lastContainer">&copy; Copyright Newton & Peter AWESOME BOOKS LIBRARY</footer>
+    </div>
+
+    <script src="modules/index.js" type="module"></script>
+  </body>
+</html>
